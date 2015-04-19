@@ -1,0 +1,8 @@
+[package]
+name = "node-to-rust"
+version = "0.1.0"
+authors = ["Alex Crichton <alex@alexcrichton.com>"]
+
+[lib]
+name = "double_input"
+crate-type = ["dylib"]
