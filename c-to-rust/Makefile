@@ -11,7 +11,7 @@ target:
 	mkdir -p $@
 
 target/double: target/main.o target/libdouble_input.a
-	$(CC) -o $@ $(LDFLAGS) $^
+	$(CC) -o $@ $^ $(LDFLAGS)
 
 target/libdouble_input.a: src/lib.rs Cargo.toml
 	cargo build
