@@ -1,0 +1,9 @@
+[package]
+name = "perl-to-rust"
+version = "0.1.0"
+#modified based on python version
+authors = ["Hao Wu <echowuhao@gmail.com>"]
+
+[lib]
+name = "double_input"
+crate-type = ["dylib"]
