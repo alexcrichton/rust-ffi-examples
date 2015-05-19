@@ -1,8 +1,14 @@
 require 'ffi'
 
+if RUBY_PLATFORM.include?('darwin')
+  EXT = 'dylib'
+else
+  EXT = 'so'
+end
+
 module Hello
   extend FFI::Library
-  ffi_lib 'target/libdouble_input.so'
+  ffi_lib 'target/debug/libdouble_input.' + EXT
   attach_function :double_input, [ :int ], :int
 end
 
