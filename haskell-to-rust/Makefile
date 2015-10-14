@@ -12,4 +12,5 @@ target/debug/libdouble_input.$(EXT): src/lib.rs Cargo.toml
 
 clean:
 	rm -rf target
+	rm main
 	rm src/*.o src/*.hi
