@@ -1,14 +1,19 @@
 from ctypes import cdll
 from sys import platform
 
-if platform == "darwin":
-    ext = "dylib"
+if platform == 'darwin':
+    prefix = 'lib'
+    ext = 'dylib'
+elif platform == 'win32':
+    prefix = ''
+    ext = 'dll'
 else:
-    ext = "so"
+    prefix = 'lib'
+    ext = 'so'
 
-lib = cdll.LoadLibrary('target/debug/libdouble_input.' + ext)
+lib = cdll.LoadLibrary('target/debug/{}double_input.{}'.format(prefix, ext))
 double_input = lib.double_input
 
 input = 4
 output = double_input(input)
-print(str(input) + " * 2 = " + str(output))
+print('{} * 2 = {}'.format(input, output))
