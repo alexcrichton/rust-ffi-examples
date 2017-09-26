@@ -1,5 +1,7 @@
-extern crate gcc;
+extern crate cc;
 
 fn main() {
-    gcc::Config::new().file("src/double.c").compile("libdouble.a");
+    cc::Build::new()
+        .file("src/double.c")
+        .compile("libdouble.a");
 }
