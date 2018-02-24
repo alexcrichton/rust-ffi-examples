@@ -1,0 +1,8 @@
+[package]
+name = "julia-to-rust"
+version = "0.1.0"
+authors = ["timmonfette1 <monfette.timothy@gmail.com>"]
+
+[lib]
+name = "double_input"
+crate-type = ["dylib"]
