@@ -2,7 +2,7 @@
 
 FFI examples written in Rust
 
-##A table for C/C++ type in Rust
+## A table for C/C++ type in Rust
 
 |C type                 | Corresponding std::os::raw type |
 |-----------------------|:--------------------------------|
@@ -23,4 +23,4 @@ FFI examples written in Rust
 |usize                  | size_t                          |
 |isize                  | ptrdiff_t                       |
 
-###You can also use https://crates.io/crates/libc instead of std::os::raw
+### You can also use https://crates.io/crates/libc instead of std::os::raw
