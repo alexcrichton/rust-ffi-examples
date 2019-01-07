@@ -1,0 +1,1 @@
+print(double_input(2))
