@@ -1,0 +1,8 @@
+[package]
+name = "crystal-to-rust"
+version = "0.1.0"
+authors = ["Calvin Hill <calvin@hakobaito.co.uk>"]
+
+[lib]
+name = "double_input"
+crate-type = ["dylib"]
