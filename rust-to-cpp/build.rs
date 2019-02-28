@@ -1,7 +1,7 @@
-extern crate gcc;
+extern crate cc;
 
 fn main() {
-    gcc::Build::new()
+    cc::Build::new()
         .file("src/triple.cpp")
         .cpp(true)
         .compile("libtriple.a");
