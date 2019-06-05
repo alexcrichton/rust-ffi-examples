@@ -1,0 +1,8 @@
+[package]
+name = "dart-to-rust"
+version = "0.1.0"
+authors = ["Zmant <zmant724@aliyun.com"]
+
+[lib]
+name = "rust_add"
+crate-type = ["cdylib"]
