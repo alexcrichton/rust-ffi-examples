@@ -1,7 +1,7 @@
 extern crate cmake;
 
 fn main() {
-    // Builds the project in the directory located in `libfoo`, installing it
+    // Builds the project in the directory located in `libdouble`, installing it
     // into $OUT_DIR
     let dst = cmake::build("libdouble");
 
