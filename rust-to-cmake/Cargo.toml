@@ -1,7 +1,7 @@
 [package]
 name = "rust-to-cmake"
 version = "0.1.0"
-authors = ["Alex Crichton <alex@alexcrichton.com>"]
+authors = ["Jörn-Michael Miehe <miehe@dp-electronics.de>"]
 build = "build.rs"
 
 [dependencies]
